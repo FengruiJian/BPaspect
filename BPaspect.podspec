@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+		   this is a tool
                    DESC
 
   s.homepage     = "https://github.com/FengruiJian/BPaspect.git"
@@ -39,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
  # s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "LICENSE" }
+   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,6 +133,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+   s.dependency "JAnalytics", "~> 1.2.1"
 
 end
