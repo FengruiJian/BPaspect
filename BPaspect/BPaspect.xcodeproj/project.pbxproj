@@ -36,7 +36,7 @@
 		7408DDB02238F6CF00C3B44F /* BPAspectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAspectManager.h; sourceTree = "<group>"; };
 		7408DDB12238F6CF00C3B44F /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		7408DDB22238F6CF00C3B44F /* BPAspectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAspectManager.m; sourceTree = "<group>"; };
-		7454BFBA2239FC12002D815E /* HeaderFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFiles.h; sourceTree = "<group>"; };
+		7454BFBC2239FFA3002D815E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E68D358460D916B527DA202F /* libPods-BPaspect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BPaspect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9C16B3CC30969E48F1C44E /* Pods-BPaspect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPaspect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BPaspect/Pods-BPaspect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,12 +91,12 @@
 		7408DDAD2238F6CF00C3B44F /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				7454BFBA2239FC12002D815E /* HeaderFiles.h */,
 				7408DDAE2238F6CF00C3B44F /* EventList.plist */,
 				7408DDAF2238F6CF00C3B44F /* Aspects.h */,
 				7408DDB02238F6CF00C3B44F /* BPAspectManager.h */,
 				7408DDB12238F6CF00C3B44F /* Aspects.m */,
 				7408DDB22238F6CF00C3B44F /* BPAspectManager.m */,
+				7454BFBC2239FFA3002D815E /* PrefixHeader.pch */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -359,6 +359,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = classes/PrefixHeader.pch;
 				INFOPLIST_FILE = BPaspect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +383,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = classes/PrefixHeader.pch;
 				INFOPLIST_FILE = BPaspect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

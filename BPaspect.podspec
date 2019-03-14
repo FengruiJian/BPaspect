@@ -94,8 +94,8 @@ Pod::Spec.new do |s|
   s.source_files  = "BPaspect", "BPaspect/classes/**/*.{h,m}"
   s.exclude_files = "BPaspect/Exclude"
 
-#   s.public_header_files = "BPaspect/BPaspect/classes/HeaderFiles.h"
-#	s.source_files = "BPaspect/BPaspect/classes/HeaderFiles.h"
+   s.public_header_files = "BPaspect", "classes/HeaderFiles.h"
+	s.source_files = "BPaspect", "classes/HeaderFiles.h"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
