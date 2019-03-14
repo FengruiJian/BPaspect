@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0878E8C17E9E2F96F47217 /* libPods-BPaspect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D358460D916B527DA202F /* libPods-BPaspect.a */; };
 		7408DD992238F6AE00C3B44F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408DD982238F6AE00C3B44F /* AppDelegate.m */; };
 		7408DD9C2238F6AE00C3B44F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408DD9B2238F6AE00C3B44F /* ViewController.m */; };
 		7408DD9F2238F6AE00C3B44F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7408DD9D2238F6AE00C3B44F /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		7408DDB32238F6CF00C3B44F /* EventList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7408DDAE2238F6CF00C3B44F /* EventList.plist */; };
 		7408DDB42238F6CF00C3B44F /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408DDB12238F6CF00C3B44F /* Aspects.m */; };
 		7408DDB52238F6CF00C3B44F /* BPAspectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408DDB22238F6CF00C3B44F /* BPAspectManager.m */; };
-		7454BFB72239EAD8002D815E /* libjanalytics-ios-1.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BFB62239EAD8002D815E /* libjanalytics-ios-1.2.1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +36,7 @@
 		7408DDB02238F6CF00C3B44F /* BPAspectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAspectManager.h; sourceTree = "<group>"; };
 		7408DDB12238F6CF00C3B44F /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		7408DDB22238F6CF00C3B44F /* BPAspectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAspectManager.m; sourceTree = "<group>"; };
-		7454BFB62239EAD8002D815E /* libjanalytics-ios-1.2.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjanalytics-ios-1.2.1.a"; path = "Pods/JAnalytics/libjanalytics-ios-1.2.1.a"; sourceTree = "<group>"; };
-		7454BFB82239EB11002D815E /* JANALYTICSEventObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JANALYTICSEventObject.h; path = Pods/JAnalytics/JANALYTICSEventObject.h; sourceTree = "<group>"; };
-		7454BFB92239EB12002D815E /* JANALYTICSService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JANALYTICSService.h; path = Pods/JAnalytics/JANALYTICSService.h; sourceTree = "<group>"; };
+		E68D358460D916B527DA202F /* libPods-BPaspect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BPaspect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9C16B3CC30969E48F1C44E /* Pods-BPaspect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPaspect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BPaspect/Pods-BPaspect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7454BFB72239EAD8002D815E /* libjanalytics-ios-1.2.1.a in Frameworks */,
+				6C0878E8C17E9E2F96F47217 /* libPods-BPaspect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,9 +111,7 @@
 		9DBD2F9CD52DA8FF045AA9B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7454BFB82239EB11002D815E /* JANALYTICSEventObject.h */,
-				7454BFB92239EB12002D815E /* JANALYTICSService.h */,
-				7454BFB62239EAD8002D815E /* libjanalytics-ios-1.2.1.a */,
+				E68D358460D916B527DA202F /* libPods-BPaspect.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
