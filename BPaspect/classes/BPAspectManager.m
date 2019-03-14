@@ -8,6 +8,7 @@
 
 #import "BPAspectManager.h"
 #import "JANALYTICSService.h"
+#import <objc/runtime.h>
 @interface BPAspectManager()
 {
     NSString *filepath;

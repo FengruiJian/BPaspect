@@ -16,9 +16,11 @@
 		7408DDB32238F6CF00C3B44F /* EventList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7408DDAE2238F6CF00C3B44F /* EventList.plist */; };
 		7408DDB42238F6CF00C3B44F /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408DDB12238F6CF00C3B44F /* Aspects.m */; };
 		7408DDB52238F6CF00C3B44F /* BPAspectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408DDB22238F6CF00C3B44F /* BPAspectManager.m */; };
+		7454BFB72239EAD8002D815E /* libjanalytics-ios-1.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BFB62239EAD8002D815E /* libjanalytics-ios-1.2.1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54E46A29DE3210245DCA6635 /* Pods-BPaspect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPaspect.release.xcconfig"; path = "Pods/Target Support Files/Pods-BPaspect/Pods-BPaspect.release.xcconfig"; sourceTree = "<group>"; };
 		7408DD942238F6AE00C3B44F /* BPaspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPaspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7408DD972238F6AE00C3B44F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7408DD982238F6AE00C3B44F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,6 +36,10 @@
 		7408DDB02238F6CF00C3B44F /* BPAspectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAspectManager.h; sourceTree = "<group>"; };
 		7408DDB12238F6CF00C3B44F /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		7408DDB22238F6CF00C3B44F /* BPAspectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAspectManager.m; sourceTree = "<group>"; };
+		7454BFB62239EAD8002D815E /* libjanalytics-ios-1.2.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjanalytics-ios-1.2.1.a"; path = "Pods/JAnalytics/libjanalytics-ios-1.2.1.a"; sourceTree = "<group>"; };
+		7454BFB82239EB11002D815E /* JANALYTICSEventObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JANALYTICSEventObject.h; path = Pods/JAnalytics/JANALYTICSEventObject.h; sourceTree = "<group>"; };
+		7454BFB92239EB12002D815E /* JANALYTICSService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JANALYTICSService.h; path = Pods/JAnalytics/JANALYTICSService.h; sourceTree = "<group>"; };
+		FB9C16B3CC30969E48F1C44E /* Pods-BPaspect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPaspect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BPaspect/Pods-BPaspect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7454BFB72239EAD8002D815E /* libjanalytics-ios-1.2.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +60,8 @@
 				7408DDAD2238F6CF00C3B44F /* classes */,
 				7408DD962238F6AE00C3B44F /* BPaspect */,
 				7408DD952238F6AE00C3B44F /* Products */,
+				9160A7F6A1CFA42C94A8B95C /* Pods */,
+				9DBD2F9CD52DA8FF045AA9B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +101,25 @@
 			path = classes;
 			sourceTree = "<group>";
 		};
+		9160A7F6A1CFA42C94A8B95C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB9C16B3CC30969E48F1C44E /* Pods-BPaspect.debug.xcconfig */,
+				54E46A29DE3210245DCA6635 /* Pods-BPaspect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DBD2F9CD52DA8FF045AA9B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7454BFB82239EB11002D815E /* JANALYTICSEventObject.h */,
+				7454BFB92239EB12002D815E /* JANALYTICSService.h */,
+				7454BFB62239EAD8002D815E /* libjanalytics-ios-1.2.1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +127,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7408DDAA2238F6AF00C3B44F /* Build configuration list for PBXNativeTarget "BPaspect" */;
 			buildPhases = (
+				A23B59CBCA125AFBE4D94FF2 /* [CP] Check Pods Manifest.lock */,
 				7408DD902238F6AE00C3B44F /* Sources */,
 				7408DD912238F6AE00C3B44F /* Frameworks */,
 				7408DD922238F6AE00C3B44F /* Resources */,
@@ -157,6 +186,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A23B59CBCA125AFBE4D94FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BPaspect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7408DD902238F6AE00C3B44F /* Sources */ = {
@@ -307,6 +357,7 @@
 		};
 		7408DDAB2238F6AF00C3B44F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9C16B3CC30969E48F1C44E /* Pods-BPaspect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +365,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jfr.BPaspect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,6 +378,7 @@
 		};
 		7408DDAC2238F6AF00C3B44F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E46A29DE3210245DCA6635 /* Pods-BPaspect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +386,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jfr.BPaspect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
