@@ -37,6 +37,7 @@
 		7408DDB12238F6CF00C3B44F /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		7408DDB22238F6CF00C3B44F /* BPAspectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAspectManager.m; sourceTree = "<group>"; };
 		7454BFBC2239FFA3002D815E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7454BFBD223A1A4C002D815E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		E68D358460D916B527DA202F /* libPods-BPaspect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BPaspect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9C16B3CC30969E48F1C44E /* Pods-BPaspect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPaspect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BPaspect/Pods-BPaspect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +98,7 @@
 				7408DDB12238F6CF00C3B44F /* Aspects.m */,
 				7408DDB22238F6CF00C3B44F /* BPAspectManager.m */,
 				7454BFBC2239FFA3002D815E /* PrefixHeader.pch */,
+				7454BFBD223A1A4C002D815E /* Header.h */,
 			);
 			path = classes;
 			sourceTree = "<group>";
